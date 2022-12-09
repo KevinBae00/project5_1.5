@@ -1,4 +1,4 @@
-package com.example;
+package com.example.board;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,15 +7,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.Date;
-
 
 @Controller
 @RequestMapping(value = "/board")
 public class BoardController {
 
     @Autowired
-    BoardServiceImpl boardService;
+    BoardService boardService;
+
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String boardlist(Model model) {

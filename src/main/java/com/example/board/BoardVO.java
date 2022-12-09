@@ -1,4 +1,4 @@
-package com.example;
+package com.example.board;
 
 import lombok.Getter;
 import lombok.Setter;
