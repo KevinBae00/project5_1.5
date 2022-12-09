@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
-<%@page import="com.example.BoardDAO, com.example.BoardVO,java.util.*" %>
+<%@page import="com.example.board.BoardDAO, com.example.board.BoardVO,java.util.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
@@ -44,7 +44,9 @@
     </script>
 </head>
 <body>
-<h1>게시판</h1>
+<h1></h1>
+<h1>자유게시판</h1>
+<h3>${sessionScope.login.username} 님 안녕하세요! <a href="../login/logout">게시판으로 이동</a></h3>
 <table id="list" width="90%">
     <tr>
         <th>id</th>
